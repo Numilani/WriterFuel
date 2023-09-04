@@ -1,6 +1,6 @@
 ﻿namespace WriterFuel.Data;
 
-public interface PatternComponent
+public interface IPatternComponent
 {
     
 }

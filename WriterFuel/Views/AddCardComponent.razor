@@ -1,0 +1,29 @@
+﻿@using WriterFuel.Data
+<h3>Add Card</h3>
+
+<RadzenRow>
+    @* <RadzenDropDown/> *@
+</RadzenRow>
+
+<RadzenRow>
+    <RadzenButton Text="Save" Click="SaveCard"/>
+</RadzenRow>
+
+@code {
+    
+    [Inject]
+    private AppDbContext DB { get; set; }
+
+    public List<string> CardTypes = new() { "Agent", "Anchor", "Aspect", "Conflict", "Engine" };
+    
+    
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+    public void SaveCard()
+    {
+        
+    }
+}
